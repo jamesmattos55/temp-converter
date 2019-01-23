@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NYGJm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-01-23 01:14:37 PM"/>
+        <attribute name="created" value="TllHSm07REVTS1RPUC1TNjlHU1UxOzIwMTktMDEtMjM7MDg6MDQ6NDAgQU07Mjc0OQ=="/>
+        <attribute name="edited" value="TllHSm07REVTS1RPUC1TNjlHU1UxOzIwMTktMDEtMjM7MDE6MTQ6MzcgUE07MzsyODc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="beginProgram" type="Boolean" array="False" size=""/>
+            <input variable="beginProgram"/>
+            <if expression="beginProgram">
+                <then>
+                    <declare name="goAgain" type="Boolean" array="False" size=""/>
+                    <do expression="goAgain">
+                        <declare name="celsius" type="Real" array="False" size=""/>
+                        <declare name="fahrenheit" type="Real" array="False" size=""/>
+                        <input variable="fahrenheit"/>
+                        <assign variable="celsius" expression="(fahrenheit - 32) * 5 / 9"/>
+                        <output expression="celsius" newline="True"/>
+                        <input variable="goAgain"/>
+                    </do>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
